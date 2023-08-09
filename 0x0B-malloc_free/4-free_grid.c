@@ -4,8 +4,8 @@
 
 /**
  * free_grid - prints an elastic grid
- * @grid - pointer of the grid to be printed
- * @height - height of the grid
+ * @grid: pointer of the grid to be printed
+ * @height: height of the grid
  *
  * Return: success
  */
