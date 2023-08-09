@@ -4,9 +4,9 @@
 
 /**
  * alloc_grid - allocates grid spaces according to params.
- * @width - is the witdth of the grid
- * @height - is the heigth of the grid
- * Returns: grid value
+ * @width: is the witdth of the grid
+ * @height: is the heigth of the grid
+ * Return: a on success and 0 on error
  */
 
 int **alloc_grid(int width, int height)
@@ -31,7 +31,7 @@ int **alloc_grid(int width, int height)
 
 	if (a[jm] == NULL)
 	{
-		for (jm1 =jm; jm1 >= 0; jm1--)
+		for (jm1 = jm; jm1 >= 0; jm1--)
 		{
 			free(a[jm1]);
 		}

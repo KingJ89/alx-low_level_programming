@@ -31,7 +31,7 @@ void print_grid(int **grid, int width, int height)
 
 /**
  * main - check the code for ALX School students.
- *
+ *alloc_grid - grid definition for main
  * Return: Always 0.
  */
 int main(void)
