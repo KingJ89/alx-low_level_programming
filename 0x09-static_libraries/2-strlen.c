@@ -1,1 +1,18 @@
-#include main.h 3-islower.c 3-strcmp.c 4-isalpha.c 5-strstr.c 9-strcpy.c _putchar.c
+#include "main.h"
+
+/**
+ * _strlen - computes length of string
+ * @s: the string to br computed
+ * Return: length of string
+ */
+int _strlen(char *s)
+{
+	int longjm = 0;
+
+	while (*s != '\0')
+	{
+		longjm++;
+		s++;
+	}
+	return (longjm);
+}

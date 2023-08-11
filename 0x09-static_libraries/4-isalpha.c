@@ -1,1 +1,12 @@
-#include main.h 5-strstr.c 9-strcpy.c _putchar.c
+#include "main.h"
+
+/**
+ * _isalpha - verifies alphabetic characters
+ * @c: the characters to check
+ * Return: 1 if success and 0 otherwise
+ */
+
+int _isalpha(int c)
+{
+	return ((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z'));
+}
