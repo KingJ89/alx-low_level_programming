@@ -5,14 +5,14 @@
 /**
  * listin_len - counts the number of elements
  * @h: pointer to list head
- * Return: elements in list
+ * Return: jm1
  */
 
 size_t listint_len(listint_t *h)
 {
 	size_t jm1 = 0;
 
-	while (h != NULL)
+	while (h)
 	{
 		h = h->next;
 		jm1++;
