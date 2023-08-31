@@ -11,10 +11,11 @@
 size_t listint_len(listint_t *h)
 {
 	size_t jm1 = 0;
+	const listint_t *latest = h;
 
-	while (h)
+	while (latest != NULL)
 	{
-		h = h->next;
+		latest = latest->next;
 		jm1++;
 	}
 	return (jm1);
