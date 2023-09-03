@@ -3,7 +3,7 @@
 
 /**
  * main - checks endianness
- * Return: 0 on success
+ * Retur: 0 on success
  */
 
 int main(void)
@@ -11,6 +11,7 @@ int main(void)
 	int n;
 
 	n = get_endianness();
+
 	if (n != 0)
 	{
 		printf("Little Endian\n");
