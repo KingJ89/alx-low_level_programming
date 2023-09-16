@@ -3,6 +3,8 @@
 #include <stddef.h>
 #include <stdio.h>
 #include <stdlib.h>
+#include "struct.c"
+
 
 /**struct lists_s - singly linked lists for 0x012
  * @str: string,malloc string memory allocation
@@ -10,14 +12,6 @@
  * @next: pointer to next node
  * singly linked lists by Jan Mutewera
  */
-typedef struct list_s
-{
-	char *jm;
-	unsigned int jm1;
-	struct list_s *next;
-}
-list_t;
-
 size_t print_list(const list_t *h);
 size_t list_len(const list_t *h);
 list_t *add_node(list_t **head, const char *str);
