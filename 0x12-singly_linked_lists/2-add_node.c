@@ -2,6 +2,7 @@
 #include <string.h>
 #include <stdlib.h>
 #include <stdio.h>
+#include <stddef.h>
 
 /**
  * add_node - adds new node at head of linked list
@@ -13,16 +14,24 @@
 list_t *add_node(list_t **head, const char *str)
 {
 	list_t *new;
-	unsigned int jm = 0;
+	unsigned int len = 0;
 
-	while (str[jm])
-		jm++;
+	while (str[len])
+		len++;
+
 	new = malloc(sizeof(list_t));
 	if (!new)
 		return (NULL);
-	new->jm1 = strdup(str);
-	new->jm = jm;
+
+	new->str = strdup(str);
+	if (!new->str)
+	{
+		free(new);
+		return (NULL);
+	}
+	new->len = len;
 	new->next = (*head);
 	(*head) = new;
+
 	return (*head);
 }
