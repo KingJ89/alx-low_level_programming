@@ -4,8 +4,8 @@
 #include <string.h>
 
 /**
- *print_list - prints elements of a linked list
- *@h: pointer to list_t
+ *print_list - prints elements of a linked list according to params
+ *@h: pointer to list
  *Return: number of nodes
  */
 
@@ -16,11 +16,12 @@ size_t print_list(const list_t *h)
 	while (h)
 	{
 	if (!h->str)
-		printf("[0] (nil)\n");
+	printf("[0] (nil)\n");
 	else
-		printf("[%u] %s\n", h->len, h->str);
+	printf("[%lu] %s\n", h->len, h->str);
+
+	h = h->next;
+	jm1++;
 	}
-		h = h->next;
-		jm1++;
 	return (jm1);
 }
