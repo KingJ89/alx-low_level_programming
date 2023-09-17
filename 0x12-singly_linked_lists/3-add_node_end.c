@@ -2,10 +2,13 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include "lists.h"
+#include <string.h>
 
 /**
  * add_node_end - adds node at end of linked list
- * Returns: new node or null if error
+ * @head: head of str
+ * @str: string for new node
+ * Return: new node or null if error
  */
 
 list_t *add_node_end(list_t **head, const char *str)
