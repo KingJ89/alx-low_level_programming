@@ -3,20 +3,22 @@
 #include <stdlib.h>
 
 /**
- * listin_len - counts the number of elements
- * @h: pointer to list head
- * Return: jm1
+ * listint_len - Returns the number of elements in a linked list
+ * @h: Linked list of type listint_t to traverse
+ *
+ * Description: This function counts the number of nodes in the linked list.
+ *
+ * Return: The number of nodes in the linked list
  */
 
-size_t listint_len(listint_t *h)
+size_t listint_len(const listint_t *h)
 {
-	size_t jm1 = 0;
-	const listint_t *latest = h;
+	size_t jm = 0;
 
-	while (latest != NULL)
+	while (h != NULL)
 	{
-		latest = latest->next;
-		jm1++;
+		h = h->next;
+		jm++;
 	}
-	return (jm1);
+	return (jm);
 }
