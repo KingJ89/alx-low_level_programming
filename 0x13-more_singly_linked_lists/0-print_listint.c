@@ -3,22 +3,23 @@
 
 /**
  * print_listint - prints all elements ot the list
- * @h: pointer to the head
- * Return: node num
+ * @jm: Linked list of type listint_t to print
+ *
+ * This function iterates through the linked list and prints the integer value
+ * of each node on a new line.
+ *
+ * Return: The number of nodes in the linked list
  */
 
-size_t print_listint(const listint_t *h)
-
+size_t print_listint(const listint_t *jm)
 {
-	size_t node num = 0;
+	size_t jm1 = 0;
 
-	while (h != NULL)
+	while (jm != NULL)
 	{
-		node num++;
-		printf("%d\n", h->n);
-		h = h->next;
-		
-
+		printf("%d\n", jm->n);
+		jm1++;
+		jm = jm->next;
 	}
-	return (node num);
+	return (jm1);
 }
