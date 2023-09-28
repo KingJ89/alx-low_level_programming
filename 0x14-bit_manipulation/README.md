@@ -1,0 +1,1 @@
+this is a non empty readme on the alx 0x14 bit manipulation project by alx many thanks to the creator of the project Julien Barbier we are really walking in the shadow of legends and we have a great legacy to uphold.
