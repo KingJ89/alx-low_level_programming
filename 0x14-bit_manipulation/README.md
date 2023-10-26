@@ -1,1 +1,1 @@
-this is an empty readme on the 0x14 project task in the holbertons alx africa programme by Jan Mutewera.
+this is a non empty read me file on the project 0x14-bit_manipulation by Jan Mutewera
