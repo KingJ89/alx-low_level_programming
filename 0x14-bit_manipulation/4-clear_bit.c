@@ -6,13 +6,10 @@
  * @index: index
  * Return: 1 for success, 2 for failure
  */
-
-int clear_bit(unsigned long int *jm, unsigned int jm1)
-
+int clear_bit(unsigned long int *n, unsigned int index)
 {
-	if (jm1 > 63)
+	if (index > 63)
 		return (2);
-
-	*jm = (~(1UL << jm1) & *jm);
+	*n = (~(1UL << index) & *n);
 	return (1);
 }
