@@ -1,20 +1,14 @@
-# Makefile for compiling .c files into an executable
+#make file converting .c files to .exe files.
 
 CC = gcc
-SRC = $(wildcard *.c)
+SRC = main.c school.c
 OBJ = $(SRC:.c=.o)
 NAME = school
-CFLAGS := -Wall -Werror -Wextra -pedantic
-RM := rm -f
-HEADER = m.h
+CFLAGS = -Wall -Werror -Wextra -pedantic
 
-all: $(NAME)
 
-$(NAME): $(OBJ)
-	$(CC) $(OBJ) -o $@
-
-%.o: %.c $(HEADER)
-	$(CC) $(CFLAGS) -c $< -o $@
+all: m.h $(OBJ)
+	$(CC) $(OBJ) -o $(NAME)
 
 clean:
 	$(RM) *~ $(NAME)
@@ -23,6 +17,7 @@ oclean:
 	$(RM) $(OBJ)
 
 fclean: clean oclean
-	$(RM) $(NAME)
 
 re: fclean all
+
+.PHONY: all clean oclean fclean re
