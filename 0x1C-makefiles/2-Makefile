@@ -1,18 +1,7 @@
 #make file compilling .c files all sorts
-
-
-# Target to build the executable
-all: school
-
-# Rule to build the school executable
-school: main.o school.o
-	gcc main.o school.o -o school
-
-main.o: main.c
-	gcc -c -o main.o main.c
-
-school.o: school.c
-	gcc -c -o school.o school.c
-
-clean:
-	rm -f *.o school
+CC = gcc
+SRC = main.c school.c
+OBJ = ${SRC:.c=.o}
+NAME = school
+all: ${OBJ}
+	${CC} ${OBJ} -o ${NAME}
