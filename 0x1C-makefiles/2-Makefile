@@ -1,0 +1,8 @@
+#make file compilling .c files all sorts
+
+CC = gcc
+SRC = main.c school.c
+obj = ${SRC:.=.o}
+	NAME = school
+all: ${obj}
+	${CC} ${OBJ} -o ${NAME}
