@@ -1,5 +1,0 @@
-#Makefile for compliling three files using the all rule to build exe.
-all: school
-
-school: main.c school.c
-gcc main.c school.c -o school

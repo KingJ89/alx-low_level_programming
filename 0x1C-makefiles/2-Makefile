@@ -1,8 +1,0 @@
-#make file compiling .c files
-
-CC = gcc
-SRC = main.c school.c
-OBJ = $(SRC:.=.o)
-NAME = school
-all: $(obj)
-	$(CC) $(OBJ) -o $(NAME)
